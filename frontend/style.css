@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1f25; /* Dark charcoal background */
+  color: #e5e5e5; /* Light gray text for contrast */
+}
+
+/* Header */
+header {
+  background-color: #2b2d37; /* Dark slate background */
+  text-align: center;
+  padding: 30px;
+  border-bottom: 3px solid #ffd700; /* Muted gold accent border */
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffd700; /* Muted gold text */
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #a3a3b5; /* Muted slate blue */
+  margin: 0;
+}
+
+/* Main Container */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+/* Form Section */
+.form-section {
+  background-color: #2b2d37; /* Dark slate background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.form-section h2 {
+  font-size: 1.8rem;
+  color: #ffd700; /* Muted gold header */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #e5e5e5; /* Light gray text */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #444857; /* Darker gray border */
+  border-radius: 6px;
+  background-color: #1e1f25; /* Charcoal input background */
+  color: #e5e5e5; /* Light gray input text */
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #ffd700;
+  color: #1e1f25; /* Charcoal button text */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e5c100; /* Slightly darker gold */
+}
+
+/* Map Section */
+.map-section {
+  background-color: #2b2d37; /* Dark slate background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.map-section h2 {
+  font-size: 1.8rem;
+  color: #ffd700; /* Muted gold header */
+  margin-bottom: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  border: 2px solid #ffd700; /* Gold border */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2b2d37; /* Matching dark background */
+  color: #a3a3b5; /* Muted slate blue */
+  font-size: 1rem;
+  border-top: 3px solid #ffd700; /* Gold accent border */
+}

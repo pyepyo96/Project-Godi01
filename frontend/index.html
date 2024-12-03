@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Godi - Truck Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa_qcb4mTJfCgO829rNkZkq_IvxNKul7c" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 class="title">🚛 Project Godi</h1>
+      <h2 class="subtitle"> Advanced Truck Tracker | Designed by Pye</h2>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Driver Input Section -->
+      <section class="form-section">
+        <h2>Driver Check-In</h2>
+        <form id="locationForm">
+          <div class="form-group">
+            <label for="driverName">Driver Full Name</label>
+            <input type="text" id="driverName" name="driverName" placeholder="e.g., John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="driverNumber">Driver Cell Number</label>
+            <input type="tel" id="driverNumber" name="driverNumber" placeholder="e.g., 1234567890" required>
+          </div>
+
+          <div class="form-group">
+            <label for="loadNumber">Load Number</label>
+            <input type="text" id="loadNumber" name="loadNumber" placeholder="e.g., LOAD12345" required>
+          </div>
+
+          <button type="submit">Start Tracking</button>
+        </form>
+      </section>
+
+      <!-- Map Display Section -->
+      <section class="map-section">
+        <h2>Driver Location</h2>
+        <div id="map"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Project Godi | Powered by Innovation</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
