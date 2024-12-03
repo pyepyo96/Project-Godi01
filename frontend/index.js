@@ -51,7 +51,7 @@ function startTracking() {
 }
 
 function sendLocationToBackend(location) {
-  fetch('http://localhost:3000/update-location', {
+  fetch('https://project-godi01-1.onrender.com/update-location', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ driverName, driverNumber, loadNumber, location }),
