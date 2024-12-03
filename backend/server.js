@@ -1,12 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const axios = require('./node_modules/axios/index.d.cts');
+require('dotenv').config();
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Google Maps API Key
-const GOOGLE_MAPS_API_KEY = 'AIzaSyAa_qcb4mTJfCgO829rNkZkq_IvxNKul7c';
+const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
 
 app.use(cors());
 app.use(express.json());
